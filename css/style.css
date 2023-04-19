@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url(../img/background0.png);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.common{
+    font-size: 2rem;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 44px;
+    right: 0px;
+    margin-block: 4px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.note{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-block: 4px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#board{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    border-radius: 5px;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px #8EC5FC;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(to top right, red,yellow);
+    border: 2px solid white;
+    transform: scale(1.02);
+    border-radius: 11px;
+
+
+    
+    
+}
+.snake{
+    background-image: linear-gradient(to top right, #08AEEA 0%, rgb(79, 228, 21) 100%);
+    
+
+    border: 1px solid black;
+    border-radius: 12px;
+
+    
+    
+}
+.food{
+    background-color:yellow;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+/* media query  */
+
+@media (max-width:700px) {
+    .common{
+        font-size:1rem;
+      
+    }
+
+}
+@media (max-width:530px) {
+    .common{
+     display: none;
+      
+    }
+}
